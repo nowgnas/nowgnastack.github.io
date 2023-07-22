@@ -104,4 +104,4 @@ theme: cactus
 deploy:
   type: git
   repo: https://github.com/nowgnas/nowgnastack.github.io.git
-  branch: page/build
+  branch: main
