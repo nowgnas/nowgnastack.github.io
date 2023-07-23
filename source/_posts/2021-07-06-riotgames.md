@@ -43,7 +43,7 @@ mermaid: true
 
 # 정리
 
-![/assets/img/posts/riotWebinar/pic1.png](/assets/img/posts/riotWebinar/pic1.png)
+![/images/img/posts/riotWebinar/pic1.png](/images/img/posts/riotWebinar/pic1.png)
 
 ---
 
@@ -72,7 +72,7 @@ mermaid: true
 
 # Git 이해하기
 
-![/assets/img/posts/riotWebinar/pic2.png](/assets/img/posts/riotWebinar/pic2.png)
+![/images/img/posts/riotWebinar/pic2.png](/images/img/posts/riotWebinar/pic2.png)
 
 1. 워킹 디렉토리에서 파일을 수정한다
 2. Staging Area에 파일을 추가한다
@@ -140,7 +140,7 @@ git branch -r
 git branch -a
 ```
 
-![/assets/img/posts/riotWebinar/pic3.png](/assets/img/posts/riotWebinar/pic3.png)
+![/images/img/posts/riotWebinar/pic3.png](/images/img/posts/riotWebinar/pic3.png)
 
 # Git remote
 

@@ -197,13 +197,13 @@ class Adam:
 
   ### Batch Normalization
 
-  ![/assets/img/posts/TaveResearch/neuralN5/batchN.png](/assets/img/posts/TaveResearch/neuralN5/batchN.png)
+  ![/images/img/posts/TaveResearch/neuralN5/batchN.png](/images/img/posts/TaveResearch/neuralN5/batchN.png)
 
 - 배치 정규화는 신경망 안에 포함되어 학습시 평균과 분산을 조정하는 역할을 한다.
 - 레이어 마다 정규화 하는 레이어를 둬서 변형된 분포가 나오지 않게 한다.
 - 미니 배치의 평균과 분산을 이용하여 정규화 한 후 scaling과 shift를 진행한다.($\gamma$ 와 $\beta$값을 이용)
 
-![/assets/img/posts/TaveResearch/neuralN5/covariate.png](/assets/img/posts/TaveResearch/neuralN5/covariate.png)
+![/images/img/posts/TaveResearch/neuralN5/covariate.png](/images/img/posts/TaveResearch/neuralN5/covariate.png)
 
 \begin{align}
 u_i = {z_i -\mu_B / \sqrt {\sigma{\_B}^2 +\epsilon}}
@@ -300,7 +300,7 @@ plt.show()
 - 60,000개인 MNIST 데이터셋의 훈련 데이터중 300개만 사용하고 7층 네트워크를 사용하였다.
 - 각 층의 뉴런 갯수는 100개, activation function은 ReLU를 사용하였다.
 
-  ![/assets/img/posts/TaveResearch/neuralN5/overfit_weight_decay.png](/assets/img/posts/TaveResearch/neuralN5/overfit_weight_decay.png)
+  ![/images/img/posts/TaveResearch/neuralN5/overfit_weight_decay.png](/images/img/posts/TaveResearch/neuralN5/overfit_weight_decay.png)
 
 - 훈련 데이터를 사용한 것과 시험 데이터를 사용한 것의 정확도 차이가 크게 나는것을 볼 수 있다.
 - epoch마다 모든 훈련 데이터와 모든 시험 데이터에서 정확도를 산출한다.
@@ -347,7 +347,7 @@ plt.show()
                           weight_decay_lambda=weight_decay_lambda)
   ```
 
-  ![/assets/img/posts/TaveResearch/neuralN5/overfit_weight_decay%201.png](/assets/img/posts/TaveResearch/neuralN5/overfit_weight_decay%201.png)
+  ![/images/img/posts/TaveResearch/neuralN5/overfit_weight_decay%201.png](/images/img/posts/TaveResearch/neuralN5/overfit_weight_decay%201.png)
 
   - overfitting이 억제된 것을 볼 수 있고, 훈련 데이터에 대한 정확도가 떨어진 것을 볼 수 있다.
 
@@ -357,7 +357,7 @@ plt.show()
 - 은닉층의 뉴런을 무작위로 골라 삭제한다.
 - 훈련 시에는 삭제할 뉴런을 무작위로 선택하고, 시험 때는 모든 뉴런에 신호를 전달한다.
 
-![/assets/img/posts/TaveResearch/neuralN5/dropout.png](/assets/img/posts/TaveResearch/neuralN5/dropout.png)
+![/images/img/posts/TaveResearch/neuralN5/dropout.png](/images/img/posts/TaveResearch/neuralN5/dropout.png)
 
 ```python
 class Dropout:
@@ -379,7 +379,7 @@ class Dropout:
 
 - self.mask는 x와 형상이 같은 배열을 무작위로 생성하고 그 값이 0.5(dropout_ratio)보다 큰 원소만 True로 설정한다.
 
-  ![/assets/img/posts/TaveResearch/neuralN5/dropout2.png](/assets/img/posts/TaveResearch/neuralN5/dropout2.png)
+  ![/images/img/posts/TaveResearch/neuralN5/dropout2.png](/images/img/posts/TaveResearch/neuralN5/dropout2.png)
 
 ## Find the value of the appropriate hyperparameter
 

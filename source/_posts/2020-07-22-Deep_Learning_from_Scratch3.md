@@ -16,7 +16,7 @@ mermaid: true
 신경망은 가장 왼쪽에 입력층, 가장 오른쪽에 출력층, 중간을 은닉층이라고 한다.  
 총 3개의 층으로 이루어져있다.
 
-![신경망의 예](/assets/img/posts/Deep_Learning/no3/Neural_Network.JPG)
+![신경망의 예](/images/img/posts/Deep_Learning/no3/Neural_Network.JPG)
 
 이전 포스트에서 봤던 퍼셉트론과 크게 다르지 않다. 간단한 퍼셉트론과의 차이는 입력과 출력 이외에 은닉층이 추가된 것 뿐이다.
 
@@ -26,7 +26,7 @@ mermaid: true
 
 ### Sigmoid Function(시그모이드 함수)
 
-![시그모이드 함수식](/assets/img/posts/Deep_Learning/no3/sigmoid.JPG)
+![시그모이드 함수식](/images/img/posts/Deep_Learning/no3/sigmoid.JPG)
 
 시그모이드 함수는 신경망에서 자주 사용되는 활성화 함수이다.
 신경망에서는 활성화 함수로 시그모이드 함수를 이용하여 신호를 변환하고, 다음 뉴런에 전달한다.
@@ -68,7 +68,7 @@ plt.show()
 
 matplotlib를 사용하여 계단함수 그래프를 그려보았다.
 
-![step function](/assets/img/posts/Deep_Learning/no3/step.png)
+![step function](/images/img/posts/Deep_Learning/no3/step.png)
 
 #### - 시그모이드 함수 구현
 
@@ -92,7 +92,7 @@ plt.show()
 
 ```
 
-![sigmoid function](/assets/img/posts/Deep_Learning/no3/sigmoid_graph.png)
+![sigmoid function](/images/img/posts/Deep_Learning/no3/sigmoid_graph.png)
 
 ## ReLU Function
 
@@ -118,4 +118,4 @@ plt.show()
 ```
 
 numpy의 np.maximum(0, x)는 0과 x중 큰값을 반환하는 함수이다.
-![ReLU](/assets/img/posts/Deep_Learning/no3/ReLU.png)
+![ReLU](/images/img/posts/Deep_Learning/no3/ReLU.png)

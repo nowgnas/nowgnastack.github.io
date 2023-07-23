@@ -10,7 +10,7 @@ mermaid: true
 
 # 3계층 구조 설계
 
-![3layer.png](/assets/posting/backend/backlayer/3layer.png)
+![3layer.png](/images/posting/backend/backlayer/3layer.png)
 
 3계층 구조 설계는 백엔드 코드를 3개의 구조로 나눠 구현하는 것을 말한다. `Controller`, `Service`, `Data Access`계층으로 나눠져 있다. `Data access`계층은 `Model` 계층으로도 쓰인다.
 

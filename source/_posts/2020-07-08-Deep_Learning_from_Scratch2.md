@@ -16,7 +16,7 @@ mermaid: true
 퍼셉트론의 기본 원리는 여러개의 신호를 입력으로 받고 하나의 신호를 출력하는 것이다.
 2개의 입력 신호를 받은 퍼셉트론은 다음과 같다.
 
-![perceptron](/assets/img/posts/Deep_Learning/perceptron.png)
+![perceptron](/images/img/posts/Deep_Learning/perceptron.png)
 
 x<sub>1</sub>, x<sub>2</sub> - 입력신호
 w<sub>1</sub>, w<sub>2</sub> - 가중치
@@ -34,7 +34,7 @@ y = {1 (x<sub>1</sub>w<sub>1</sub> + x<sub>2</sub>w<sub>2</sub> > b)}
 퍼셉트론으로 AND게이트를 구현할 수 있다.
 AND게이트의 진리표이다.
 
-![ANDgate](/assets/img/posts/Deep_Learning/ANDgate.JPG)
+![ANDgate](/images/img/posts/Deep_Learning/ANDgate.JPG)
 
 AND게이트를 코드로 구현해 보았다.
 

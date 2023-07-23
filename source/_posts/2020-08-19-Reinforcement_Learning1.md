@@ -9,7 +9,7 @@ mermaid: true
 
 # 강화학습이란?
 
-![RL](/assets/img/posts/RL_study_1/RL_img.png)
+![RL](/images/img/posts/RL_study_1/RL_img.png)
 
 - 에이전트가 환경으로부터 얻는 보상을 통해 좋은 행동을 더 많이 하게 하는 학습 방법이다.
 
@@ -56,7 +56,7 @@ mermaid: true
 ### Bellman Optimality Equation
 
 - 가치함수의 역할은 정책을 정하고 정책을 따라갔을때 받는 보상들의 합인 가치함수로 더 좋은 정책을 찾는것이다.
-  ![bellman optimal](/assets/img/posts/RL_study_1/bellman_optimal.png)
+  ![bellman optimal](/images/img/posts/RL_study_1/bellman_optimal.png)
 
 # Dynamic Programming
 
@@ -83,7 +83,7 @@ mermaid: true
 
   - 어떤 정책이 있을때 그 정책을 정책 평가 를 통해 얼마나
     좋은지 판단하고 그 결과를 기준으로 더 좋은 정책 으로 발전 시킨다.
-    ![policy evaluation](/assets/img/posts/RL_study_1/policy_evaluation.png)
+    ![policy evaluation](/images/img/posts/RL_study_1/policy_evaluation.png)
 
   #### 정책 발전
 
@@ -91,7 +91,7 @@ mermaid: true
   - 탐욕 정책 발전(Greedy Policy Improvement)를 사용
   - Q-Function을 사용하여 행동에 대한 가치함수를 알 수 있다.
   - argmax는 가장 큰 큐함수를 가지는 행동을 반환하는 함수이다.
-    ![greedy pol](/assets/img/posts/RL_study_1/greedy_pol.png)
+    ![greedy pol](/images/img/posts/RL_study_1/greedy_pol.png)
 
 ### 가치 이터레이션
 
@@ -100,7 +100,7 @@ mermaid: true
 - 벨만 최적방정식에서는 현재 상태에서 가능한 최고의
   가치함수 값을 고려하면 된다.
 - 벨만 최적 방정식과는 다르게 정책값을 이용해 기댓값을 계산하던 부분이 없어지고 max가 있다.
-  ![value iteration](/assets/img/posts/RL_study_1/value_iteration.png)
+  ![value iteration](/images/img/posts/RL_study_1/value_iteration.png)
 
 # Q-Learning
 
@@ -109,7 +109,7 @@ mermaid: true
 - 몬테카를로 근사의 예시로 원의 넓이 구하기가 있다.
 - 원의 넓이는 <b>S = 𝜋r<sup>2</sup></b> 이다.
 - 원의 넓이를 구하는 공식을 모를때 몬테카를로 근사를 사용할 수 있다.  
-  ![PI](/assets/img/posts/RL_study_1/PI.png)
+  ![PI](/images/img/posts/RL_study_1/PI.png)
 
 - 몬테카를로 근사로 원의 넓이 구하기
 
@@ -143,7 +143,7 @@ mermaid: true
 - SARSA에서 업데이트 하는것은 큐함수이다.
 - 큐함수를 업데이트하기 위한 샘플로 \[S<sub>t</sub>, A<sub>t</sub>, R<sub>t+1</sub>, S<sub>t+1</sub>, A<sub>t+1</sub>]을 사용한다.
 - ε만큼의 확률로 탐욕적이지 않은 행동을 선택하게 한다.
-  ![sarsa](/assets/img/posts/RL_study_1/sarsa1.png)
+  ![sarsa](/images/img/posts/RL_study_1/sarsa1.png)
 
 ### Q-Learning
 
@@ -151,7 +151,7 @@ mermaid: true
 - 온폴리시(On-Policy)학습의 경우 에이전트가 탐험할 때 문제점이 발생한다.
 - 오프폴리시(Off-Policy) = Q-Learning으로 해결이 가능하다.
 - 현재 상태의 큐함수를 업데이트하기 위해 필요한 샘플은 \[s, a, r, s]이다.
-  ![sarsa2](/assets/img/posts/RL_study_1/sarsa3.png)
+  ![sarsa2](/images/img/posts/RL_study_1/sarsa3.png)
 
 ## 정리
 

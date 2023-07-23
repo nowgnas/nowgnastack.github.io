@@ -13,7 +13,7 @@ mermaid: true
 
 ## Structure
 
-![/assets/img/posts/TaveResearch/neuralN6/structure.png](/assets/img/posts/TaveResearch/neuralN6/structure.png)
+![/images/img/posts/TaveResearch/neuralN6/structure.png](/images/img/posts/TaveResearch/neuralN6/structure.png)
 
 - Convolutional layer(합성곱 계층) 과 Down sampling layer로 구성되어 있다.
 - Convolutional layer는 입력의 패턴을 스캔하는 뉴런으로 구성되어 있다.
@@ -26,7 +26,7 @@ mermaid: true
 
 ### Convolution Operation
 
-![/assets/img/posts/TaveResearch/neuralN6/conv1.png](/assets/img/posts/TaveResearch/neuralN6/conv1.png)
+![/images/img/posts/TaveResearch/neuralN6/conv1.png](/images/img/posts/TaveResearch/neuralN6/conv1.png)
 
 - Convolution layer에서의 합성곱(convolution) 연산을 수행한다.
 - 이미지 처리에서 필터 연산과 같다.
@@ -35,7 +35,7 @@ mermaid: true
 
 ## Padding
 
-![/assets/img/posts/TaveResearch/neuralN6/padding.png](/assets/img/posts/TaveResearch/neuralN6/padding.png)
+![/images/img/posts/TaveResearch/neuralN6/padding.png](/images/img/posts/TaveResearch/neuralN6/padding.png)
 
 - 합성곱 연산을 진행하기 전, 입력 데이터 주변을 0으로 채우는 것을 Padding이라고 한다.
 - (5X5) 크기의 데이터에 폭이 1인 padding을 적용한 후, (3X3)크기의 필터로 스캔을 하면 (5X5) 크기의 출력 데이터가 나온다.
@@ -43,7 +43,7 @@ mermaid: true
 
 ## Stride
 
-![/assets/img/posts/TaveResearch/neuralN6/stride.png](/assets/img/posts/TaveResearch/neuralN6/stride.png)
+![/images/img/posts/TaveResearch/neuralN6/stride.png](/images/img/posts/TaveResearch/neuralN6/stride.png)
 
 - Stride는 필터를 적용하는 위치의 간격을 말한다.
 - 위 그림은 stride를 2로 적용시킨 것이다.
@@ -51,7 +51,7 @@ mermaid: true
 
 ## Output size
 
-![/assets/img/posts/TaveResearch/neuralN6/output.png](/assets/img/posts/TaveResearch/neuralN6/output.png)
+![/images/img/posts/TaveResearch/neuralN6/output.png](/images/img/posts/TaveResearch/neuralN6/output.png)
 
 - output size를 계산하는 식이다.
 - 입력 데이터가 (HXW)이면 input size에 H와 W가 들어간다.
@@ -68,13 +68,13 @@ mermaid: true
 
 ### Max Pooling
 
-![/assets/img/posts/TaveResearch/neuralN6/max.png](/assets/img/posts/TaveResearch/neuralN6/max.png)
+![/images/img/posts/TaveResearch/neuralN6/max.png](/images/img/posts/TaveResearch/neuralN6/max.png)
 
 - Max pooling은 위 그림과 같이 (2x2)영역에서 가장 큰 값을 선택하여 출력한다.
 - 이미지 인식에서는 주로 max pooling을 사용한다.
 
 ### Average Pooling
 
-![/assets/img/posts/TaveResearch/neuralN6/avg.png](/assets/img/posts/TaveResearch/neuralN6/avg.png)
+![/images/img/posts/TaveResearch/neuralN6/avg.png](/images/img/posts/TaveResearch/neuralN6/avg.png)
 
 - Average pooling(mean pooling)은 (2x2)영역에서 평균값을 출력으로 가진다.

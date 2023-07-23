@@ -249,7 +249,7 @@ plt.show()
 - 초기 데이터는 파란색 o모양 마커를 사용하였고, 예측된 데이터는 주황색 x모양 마커를 사용하였다.
 - 최종 예측된 기울기는 1이다.
 
-![산점도 사진.png](/assets/img/posts/Generic_Algorithm/Tesla.png)
+![산점도 사진.png](/images/img/posts/Generic_Algorithm/Tesla.png)
 
 ## MSE(평균 제곱 오차)
 
@@ -259,7 +259,7 @@ plt.show()
 - MSE의 값이 작을수록 원본과의 오차가 적으며 추측한 값의 정확도가 높은 것이다.
 - 아래 MSE 그래프를 보면 원래 기울기와의 오차가 클수록 MSE값이 커지는 것을 볼 수 있다.
 
-![MSE 그래프](/assets/img/posts/Generic_Algorithm/TeslaMSE.png)
+![MSE 그래프](/images/img/posts/Generic_Algorithm/TeslaMSE.png)
 
 - 코드가 실행될 때 어떤 값들을 예측하고 지나가는지 알기위해 각 함수 출력도 같이 하였다.
 - MSE의 값이 가장 작은 기울기가 1로 나왔다.

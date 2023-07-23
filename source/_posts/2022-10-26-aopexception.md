@@ -92,7 +92,7 @@ public class ErrorResponse {
 
 위 코드는 mybatis(mybatis 설명은 생략한다)로 정의한 사용자 로그인 쿼리이다. `from member`가 올바른 쿼리이며, `member_`로 쿼리에서 오류를 발생시켜보았다. 로그인 요청을 하게되면 BadSqlGrammarException이 발생하게 된다.
 
-![스크린샷 2022-10-26 오후 8.46.10.png](/assets/posting/spring/aop/pic1.png)
+![스크린샷 2022-10-26 오후 8.46.10.png](/images/posting/spring/aop/pic1.png)
 
 ```java
 @ExceptionHandler(BadSqlGrammarException.class)
@@ -105,17 +105,17 @@ public ResponseEntity<ErrorResponse> BadSqlGrammarException(BadSqlGrammarExcepti
 
 ExceptionHandler에 예외 클래스를 정의해 준다. ErrorResponse 객체로 오류 발생 시 반환할 객체를 생성하고 ResponseEntity로 반환해 준다.
 
-![스크린샷 2022-10-26 오후 8.40.22.png](/assets/posting/spring/aop/pic2.png)
+![스크린샷 2022-10-26 오후 8.40.22.png](/images/posting/spring/aop/pic2.png)
 postman으로 로그인 요청을 보낸 후 받은 응답 body이다. 요청에 대한 응답은 ErrorResponse 객체를 받은 것을 확인할 수 있다. errors와 code는 정의하지 않아 null로 반환되었다. 코드 위쪽의 이미지에서 BadSqlGrammarException이 콘솔에 찍혀 있는것을 확인할 수 있다.
 
 ### NullPointerException
 
 다시 사용자 로그인을 사용해 NullPointerException을 발생시켜 본다. 위에서 로그인 쿼리는 다시 되돌려 놓는다. 이번에는 데이터베이스에 존재하지 않는 정보로 로그인을 시도한다.
 
-![스크린샷 2022-10-26 오후 8.54.17.png](/assets/posting/spring/aop/pic3.png)
+![스크린샷 2022-10-26 오후 8.54.17.png](/images/posting/spring/aop/pic3.png)
 id가 p이고 pw가 1234인 사용자는 데이터에 존재하지 않는다. 이 데이터를 가지고 로그인 요청을 하게되면 NullPointerException이 발생한다.
 
-![스크린샷 2022-10-26 오후 8.56.41.png](/assets/posting/spring/aop/pic4.png)
+![스크린샷 2022-10-26 오후 8.56.41.png](/images/posting/spring/aop/pic4.png)
 
 ```java
 @ExceptionHandler(NullPointerException.class)
@@ -128,7 +128,7 @@ public ResponseEntity<ErrorResponse> NullPointerException(NullPointerException n
 
 ExceptionHandler에 NullPointerException으로 예외 클래스를 정의해 준다. 데이터베이스에 존재하지 않는 사용자이므로 NullPointerException가 발생하는 것을 볼 수 있다. ErrorResponse로 응답 객체를 만들고 ResponseEntity로 json 형태로 반환하게 되면 다음과 같은 응답을 얻을 수 있다.
 
-![스크린샷 2022-10-26 오후 8.58.56.png](/assets/posting/spring/aop/pic5.png)
+![스크린샷 2022-10-26 오후 8.58.56.png](/images/posting/spring/aop/pic5.png)
 에러의 메세지와 지정해준 상태 코드가 담겨 응답으로 반환된다. errors와 code 데이터는 추가하지 않아 null을 반환하게 된다.
 
 AOP를 이용해서 controller에 클래스에 따른 예외처리를 적용해 보았다. 핵심 기능과 부가 기능으로 구분해서 각각을 하나의 관점으로 본다는 AOP의 관점을 조금 이해할 수 있었던 예제였다.

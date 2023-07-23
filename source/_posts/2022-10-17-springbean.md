@@ -53,7 +53,7 @@ BeanFactory는 스프링 IoC를 담당하는 핵심 컨테이너로 Bean의 등�
 
 객체 생성을 컨테이너에 위임하여 처리하므로 객체 간의 결합도를 낮출 수 있다. 프로젝트의 결합도가 높으면 유지보수 시 하나의 클래스가 변경될 때 다수의 클래스들도 변경되어야 하므로 결합도가 낮은 프로젝트가 유지보수에 용이하다.
 
-![스크린샷 2022-10-18 오전 8.14.02.png](/assets/posting/spring/bean/pic1.png)
+![스크린샷 2022-10-18 오전 8.14.02.png](/images/posting/spring/bean/pic1.png)
 
 IoC의 호출 방식은 위와 같다. 팩토리 패턴의 장점을 더하여 어떠한 것에도 의존하지 않는 형태를 가진다. 실행 시점에 클래스 간의 관계가 형성된다.
 
@@ -153,4 +153,4 @@ Annotation은 멤버 변수에 직접 정의 하는 경우 setter method를 만�
 
 지금까지 봤던 bean의 생명주기이다.
 
-![beanlifecycle.png](/assets/posting/spring/bean/beanlifecycle.png)
+![beanlifecycle.png](/images/posting/spring/bean/beanlifecycle.png)

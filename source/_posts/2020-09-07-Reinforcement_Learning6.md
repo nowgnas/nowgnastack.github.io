@@ -21,7 +21,7 @@ mermaid: true
 - DQN은 Deep SARSA와는 다르게 Q learning의 Q Function을 업데이트 한다.
 - Q Function 업데이트를 가능하게 하기 위해 경험 리플레이를 사용한다.
 - 경험 리플레이는 에이전트가 환경에서 탐험하며 얻는 샘플(s, a, r, s’)을 메모리에 저장하는것이다.
-  ![q funtion](/assets/img/RL_Study6/q.png)
+  ![q funtion](/images/img/RL_Study6/q.png)
   <sub>Q-learning의 Q함수 업데이트 식</sub>
 
 ## DQN의 특징
@@ -49,16 +49,16 @@ mermaid: true
 
 ## [DQN Algorithm 구조]
 
-![dqn](/assets/img/RL_Study6/dqn.png)
+![dqn](/images/img/RL_Study6/dqn.png)
 
 # Cartpole
 
-![cart](/assets/img/RL_Study6/cart.png)
+![cart](/images/img/RL_Study6/cart.png)
 
 ## Markov Decision Process (MDP)
 
 - 상태(state) : 카트의 위치, 속도, 폴의 각도, 각속도
-  ![mdp](/assets/img/RL_Study6/agent.png)
+  ![mdp](/images/img/RL_Study6/agent.png)
 
 - 행동(action) : 왼쪽(0), 오른쪽(1)
 - 보상(reward) : 카트폴이 쓰러지지 않고 버티는 시간

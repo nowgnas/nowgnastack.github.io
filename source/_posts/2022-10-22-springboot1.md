@@ -24,11 +24,11 @@ Spring boot 와 react를 사용하여 웹 서비스를 개발해 보려고 한�
 
 ## server 구성하기
 
-![스크린샷 2022-10-22 오후 1.15.15.png](/assets/posting/spring/springboot1/pic1.png)
+![스크린샷 2022-10-22 오후 1.15.15.png](/images/posting/spring/springboot1/pic1.png)
 
 server는 spring boot로 개발한다. spring initializer로 프로젝트를 만들어 준다. java version은 11, 빌드 타입은 maven, packaging은 War을 선택해 줬다.
 
-![스크린샷 2022-10-22 오후 1.31.22.png](/assets/posting/spring/springboot1/pic2.png)
+![스크린샷 2022-10-22 오후 1.31.22.png](/images/posting/spring/springboot1/pic2.png)
 
 의존성은 책 내용에 따라 3가지를 선택해 프로젝트를 생성해 준다.
 
@@ -80,14 +80,10 @@ spring boot의 포트는 8080이고 react의 포트는 3000이다. client에서 
 import axios from "axios";
 
 const backendPortNumber = "8080";
-const serverUrl =
-  "http://" + window.location.hostname + ":" + backendPortNumber + "/api/v1/";
+const serverUrl = "http://" + window.location.hostname + ":" + backendPortNumber + "/api/v1/";
 
 async function get(endpoint, params = "") {
-  console.log(
-    `%cGET 요청 ${serverUrl + endpoint + "/" + params}`,
-    "color: #a25cd1;"
-  );
+  console.log(`%cGET 요청 ${serverUrl + endpoint + "/" + params}`, "color: #a25cd1;");
 
   return axios.get(serverUrl + endpoint + "/" + params, {
     // JWT 토큰을 헤더에 담아 백엔드 서버에 보냄.
@@ -229,7 +225,7 @@ server에서 controller 전체 url 을 /api/v1/user로 설정해 주었고 login
 
 #### 결과 확인하기
 
-![스크린샷 2022-10-22 오후 2.32.27.png](/assets/posting/spring/springboot1/pic2_1.png)
+![스크린샷 2022-10-22 오후 2.32.27.png](/images/posting/spring/springboot1/pic2_1.png)
 
 About 버튼을 누르게되면 server 터미널에 hello spring이 찍히고 화면에서는 hello 메세지를 가진 alert창이 뜬다.
 
@@ -295,7 +291,7 @@ public class TechblogApplication {
 
 spring application 파일에서 @EnableSwagger2 어노테이션을 추가해 준다. 이제 /swagger-ui/로 접속하면 api 문서를 확인할 수 있다.
 
-![스크린샷 2022-10-22 오후 2.30.49.png](/assets/posting/spring/springboot1/pic3.png)
+![스크린샷 2022-10-22 오후 2.30.49.png](/images/posting/spring/springboot1/pic3.png)
 
 경로와 응답 타입 등 따로 설정하지 않아도 어노테이션만 붙여주면 잘 나오게 된다.
 

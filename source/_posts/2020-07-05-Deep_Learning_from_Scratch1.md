@@ -48,7 +48,7 @@ plt.show()
 ```
 
 위 코드를 실행한 그래프이다.  
-![cos&sin](/assets/img/posts/Deep_Learning/cossin.png)
+![cos&sin](/images/img/posts/Deep_Learning/cossin.png)
 
 이미지를 표시하려면 matplotlib의 image에서 imread를 import하여 사용한다.
 

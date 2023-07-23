@@ -29,7 +29,7 @@ mermaid: true
 > 2 outputs: h<sub>t</sub>, C<sub>t</sub>  
 > 4 params: W<sub>i</sub>, W<sub>f</sub>, W<sub>o</sub>, W<sub>h</sub>
 
-![LSTMcell](/assets/img/LSTM_GRU/LSTM_Cellmy.png)  
+![LSTMcell](/images/img/LSTM_GRU/LSTM_Cellmy.png)  
  <sub>이미지 참고: [colah's blog](http://colah.github.io/posts/2015-08-Understanding-LSTMs/)</sub>
 
 ## Forget Mechanism
@@ -37,14 +37,14 @@ mermaid: true
 - 과거의 정보를 기억할지 잊을지를 결정하는 단계이다.
 - forget mechanism은 hidden unit(h<sub>t-1</sub>)과 input을 받아 sigmoid를 통과한다
 - f<sub>t</sub> = 𝜎(W<sub>f</sub> x \[h<sub>t-1</sub>, x<sub>t</sub>] + b<sub>f</sub>)
-  ![forget](/assets/img/LSTM_GRU/forget.png)
+  ![forget](/images/img/LSTM_GRU/forget.png)
 
 ## Input Mechanism
 
 - 현재의 정보를 잊을지 기억할지 결정하는 gate이다.
 - input mechanism은 hidden unit(h<sub>t-1</sub>)과 input을 받아 sigmoid와 tanh를 통과 하여 C<sub>t</sub>를 생성한다.
 - i<sub>t</sub> = 𝜎(W<sub>i</sub> x \[h<sub>t-1</sub>, x<sub>t</sub>] + b<sub>i</sub>)
-  ![input](/assets/img/LSTM_GRU/input.png)
+  ![input](/images/img/LSTM_GRU/input.png)
 
 ## Output Mechanism
 
@@ -53,7 +53,7 @@ mermaid: true
 - h<sub>t</sub> = o<sub>t</sub> \* tanh(C<sub>t</sub>)
 - C<sub>t</sub> = f<sub>t</sub> \* C<sub>t-1</sub> + i<sub>t</sub> \* C'<sub>t</sub>
 - C'<sub>t</sub> = tanh(W<sub>C</sub> x \[h<sub>t-1</sub>, x<sub>t</sub>] + b<sub>C</sub>)
-  ![output](/assets/img/LSTM_GRU/output.png)
+  ![output](/images/img/LSTM_GRU/output.png)
 
 # GRU Cell
 
@@ -62,7 +62,7 @@ mermaid: true
 - z<sub>t</sub>가 forget과 input 게이트를 모두 제어한다.
   - z<sub>t</sub>가 1일때 forget 게이트가 열리고, 0일때 input 게이트가 열린다.
 - output게이트가 없으며, 이전 hidden cell에서 어느 부분이 출력될지 결정하는 것은 r<sub>t</sub>가 수행한다.
-  ![gru](/assets/img/LSTM_GRU/GRU.png)
+  ![gru](/images/img/LSTM_GRU/GRU.png)
 
 ### Reset Gate
 
@@ -85,17 +85,17 @@ mermaid: true
 - d1은 Encoder의 모든 hidden space vector를 자신의 위치와 가장 관계가 깊은 단어가 무엇인지 고민한다.
 - 모든 e를 살펴보며 score funtion을 통과 한 것이 Attention Score이다.
 
-![seq2](/assets/img/LSTM_GRU/seq2.png)
+![seq2](/images/img/LSTM_GRU/seq2.png)
 
 ### <b>\[Normalize]</b>
 
 - Sorce에 Softmax를 취한다.
 - e와 a를 가지고 context vector c를 만든다.
 
-![seq3](/assets/img/LSTM_GRU/seq3.png)
+![seq3](/images/img/LSTM_GRU/seq3.png)
 
 ### <b>\[다음 언어 예측]</b>
 
 - c와 d를 가지고 다음 언어를 예측할 수 있다. 이 때, 단어 예측을 위한 f는 Neural Network를 사용한다.
 
-  ![seq4](/assets/img/LSTM_GRU/seq4.png)
+  ![seq4](/images/img/LSTM_GRU/seq4.png)

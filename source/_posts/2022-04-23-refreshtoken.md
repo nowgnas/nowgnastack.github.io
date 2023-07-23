@@ -16,7 +16,7 @@ JWT는 json 형태를 사용해서 사용자에 대한 속성을 저장하는 `C
 
 # Refresh token
 
-![ppt 이미지 저장](/assets/posting/backend/refreshtoken/refresh4.png)
+![ppt 이미지 저장](/images/posting/backend/refreshtoken/refresh4.png)
 
 ppt 이미지 저장
 

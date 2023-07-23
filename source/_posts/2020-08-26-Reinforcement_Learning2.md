@@ -320,13 +320,13 @@ tensor([[4.5000, 4.5000], [4.5000, 4.5000]])
 
 - gradient는 스칼라 함수에 대한 일차 미분이지만, 야코비안 행렬은 다변수 벡터 함수에 대한 일차 미분이다.
 - 아래 식은 야코비안 행렬을 정의한 것이다.  
-  ![jacobian](/assets/img/RL_Study2/jacobian.png)
+  ![jacobian](/images/img/RL_Study2/jacobian.png)
 
 ### torch.autograd
 
 - torch.autograd는 벡터-야코비안 곱을 계산한다.
 - 벡터 v = (v<sub>1</sub> v<sub>2</sub> ... v<sub>m</sub>)<sup>T</sup>에 대해 v<sup>T</sup> \* J을 연산한다.  
-  ![jacobian2](/assets/img/RL_Study2/jacobian2.png)
+  ![jacobian2](/images/img/RL_Study2/jacobian2.png)
 
 # 정리
 

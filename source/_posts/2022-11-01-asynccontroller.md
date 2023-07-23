@@ -52,13 +52,12 @@ id
 hello controller
 ```
 
-![스크린샷 2022-11-01 오전 1.11.31.png](/assets/posting/spring/async/pic1.png)
+![스크린샷 2022-11-01 오전 1.11.31.png](/images/posting/spring/async/pic1.png)
 
 시스템 출력에는 위와 같이 출력되며 출력된 후 `return “hello”`를 통해 `webapp/WEB-INF/views`에 있는 hello.jsp가 호출된다. 개발자 도구를 확인해보면 hello.jsp와 동일한 구조를 가진 페이지가 보여지게 된다.
 
 ```html
-<%--hell.jsp--%> <%@ page contentType="text/html;charset=UTF-8" language="java"
-%>
+<%--hell.jsp--%> <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head>
     <title>Title</title>
@@ -101,7 +100,7 @@ id
 hello rest controller
 ```
 
-![스크린샷 2022-11-01 오전 1.31.41.png](/assets/posting/spring/async/pic2.png)
+![스크린샷 2022-11-01 오전 1.31.41.png](/images/posting/spring/async/pic2.png)
 
 RestController형태이므로 반환되는 형태는 html body가 반환된다. 개발자 도구를 확인해 보면 body 태그 안에 반환되는 문자열이 출력된다.
 
@@ -152,37 +151,33 @@ Java코드를 보게되면 요청을 받은 후 반환하는 값이 문자열이
 
 위 javascript 코드에서 alert 창에 띄워지는 데이터는 hello.jsp가 띄워진다. (hello.jsp 코드는 동기적 방식에 있다.)
 
-![스크린샷 2022-11-01 오전 2.02.18.png](/assets/posting/spring/async/pic3.png)
+![스크린샷 2022-11-01 오전 2.02.18.png](/images/posting/spring/async/pic3.png)
 
 ### RestController로 요청하기
 
 ```html
 <p>restcontroller async</p>
-async id<input id="asynccontrollerid" /> async pw<input
-  id="asynccontrollerpw"
-/>
+async id<input id="asynccontrollerid" /> async pw<input id="asynccontrollerpw" />
 <input type="button" id="asyncControllerBtn" value="async" />
 ```
 
 ```jsx
-document
-  .querySelector("#asyncControllerBtn")
-  .addEventListener("click", async () => {
-    let id = document.querySelector("#asynccontrollerid").value;
-    let pw = document.querySelector("#asynccontrollerpw").value;
+document.querySelector("#asyncControllerBtn").addEventListener("click", async () => {
+  let id = document.querySelector("#asynccontrollerid").value;
+  let pw = document.querySelector("#asynccontrollerpw").value;
 
-    let data = {
-      method: "post",
-      body: JSON.stringify({ id, pw }),
-      headers: { "Content-Type": "application/json" },
-    };
+  let data = {
+    method: "post",
+    body: JSON.stringify({ id, pw }),
+    headers: { "Content-Type": "application/json" },
+  };
 
-    data = await fetch("resthello", data);
-    data = await data.text();
-    alert(data); // return 값인 hello가 온다
-    data = JSON.parse(data);
-    // alert(data);
-  });
+  data = await fetch("resthello", data);
+  data = await data.text();
+  alert(data); // return 값인 hello가 온다
+  data = JSON.parse(data);
+  // alert(data);
+});
 ```
 
 ```java
@@ -199,7 +194,7 @@ public String hello(@RequestBody Map<String, String> map) {
 
 RestController의 “/resthello”로 요청이 들어오게되고, 반환되는 값은 hello이다. RestController는 html body를 반환하기 때문에 아래와 같은 결과가 나오게 된다.
 
-![스크린샷 2022-11-01 오전 2.07.32.png](/assets/posting/spring/async/pic4.png)
+![스크린샷 2022-11-01 오전 2.07.32.png](/images/posting/spring/async/pic4.png)
 
 Fetch 동작이 끝난 후 alert 창에 data를 띄워보면 RestController에서 반환된 “hello”가 출력되는 것을 알 수 있다.
 

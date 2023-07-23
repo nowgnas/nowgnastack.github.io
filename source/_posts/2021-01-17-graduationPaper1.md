@@ -12,7 +12,7 @@ mermaid: true
 - Variational auto encoder 는 Generative model 이다.
 - Training data의 distribution을 근사하는 특징을 가지고 있다.
 
-  ![/assets/img/posts/GraduationPaper/vae/generator.png](/assets/img/posts/GraduationPaper/vae/generator.png)
+  ![/images/img/posts/GraduationPaper/vae/generator.png](/images/img/posts/GraduationPaper/vae/generator.png)
 
 > z : latent variable  
 > x : target data
@@ -26,14 +26,14 @@ mermaid: true
 
 # Intractable calculation issue
 
-![/assets/img/posts/GraduationPaper/vae/model.png](/assets/img/posts/GraduationPaper/vae/model.png)
+![/images/img/posts/GraduationPaper/vae/model.png](/images/img/posts/GraduationPaper/vae/model.png)
 
 - 실선이 generative model 인 $p_\theta(z)p_\theta(x\|z)$이고, 점선은 $q_\theta(z\|x)$를 이용해 근사할 $p_\theta(z\|x)$이다.
 - $p(z\|x)$를 계산하기 위한 $p_\theta(x) = \int_z(p_\theta(x\|z)p_\theta(z)dz$가 모든 z에 대해 적분 할 수 없기때문에 $q_\theta(z\|x)$(입력 x)를 도입하여 계산한다.
 
 ## Derivation 1
 
-![/assets/img/posts/GraduationPaper/vae/derivation1.png](/assets/img/posts/GraduationPaper/vae/derivation1.png)
+![/images/img/posts/GraduationPaper/vae/derivation1.png](/images/img/posts/GraduationPaper/vae/derivation1.png)
 
 - Concave 함수로 변환하기 위해 log를 씌운다.
 - Jensen's Inequality 를 사용하여 log를 안으로 넣어준다. ($f[E(x)] \ge E[f(x)]$)
@@ -42,7 +42,7 @@ mermaid: true
 
 ## Derivation 2
 
-![/assets/img/posts/GraduationPaper/vae/derivation2.png](/assets/img/posts/GraduationPaper/vae/derivation2.png)
+![/images/img/posts/GraduationPaper/vae/derivation2.png](/images/img/posts/GraduationPaper/vae/derivation2.png)
 
 - 2번째 증명 공식은 $p(x) = p(x)$으로 시작 한다.
 - z에 대한 확률분포의 모든 합이 1인 것을 이용하여 $p(x)$에 곱해준다.
@@ -55,7 +55,7 @@ mermaid: true
 
 ## LOSS Function
 
-![/assets/img/posts/GraduationPaper/vae/fullmodel.png](/assets/img/posts/GraduationPaper/vae/fullmodel.png)
+![/images/img/posts/GraduationPaper/vae/fullmodel.png](/images/img/posts/GraduationPaper/vae/fullmodel.png)
 
 ### Variational Inference ($\phi$)
 
@@ -81,11 +81,11 @@ argmax\_({\phi, \theta}) {\sum}\_i -{E\_{q{\_\phi} (z\|x_i)} \[ \log (p(x_i\|g\_
 
 ### Regularization (Encoder)
 
-![/assets/img/posts/GraduationPaper/vae/KL.png](/assets/img/posts/GraduationPaper/vae/KL.png)
+![/images/img/posts/GraduationPaper/vae/KL.png](/images/img/posts/GraduationPaper/vae/KL.png)
 
 - $q_\phi (z\|x_i)$는 $N(\mu_i, {\sigma{_i}}^2I)$, $p(z)$는 $N(0,1)$으로 가정한다.
 
-  ![/assets/img/posts/GraduationPaper/vae/regular.png](/assets/img/posts/GraduationPaper/vae/regular.png)
+  ![/images/img/posts/GraduationPaper/vae/regular.png](/images/img/posts/GraduationPaper/vae/regular.png)
 
 > [두 normal distribution 사이의 KL divergence](https://mr-easy.github.io/2020-04-16-kl-divergence-between-2-gaussian-distributions/)
 
@@ -93,7 +93,7 @@ argmax\_({\phi, \theta}) {\sum}\_i -{E\_{q{\_\phi} (z\|x_i)} \[ \log (p(x_i\|g\_
 
 ### Reparameterization Trick
 
-![/assets/img/posts/GraduationPaper/vae/reparameterization.png](/assets/img/posts/GraduationPaper/vae/reparameterization.png)
+![/images/img/posts/GraduationPaper/vae/reparameterization.png](/images/img/posts/GraduationPaper/vae/reparameterization.png)
 
 KLD까지 통과를 하고 이제 Decoder 부분으로 넘어가면 되는데 문제가 있다. $q_\theta ()$에서는 sampling을 진행하게 되며, z는 Gaussian distribution이므로 Backpropagation이 불가능하다.
 
@@ -106,13 +106,13 @@ z^{i,j} = \mu_i +{\sigma{\_i}}^2 \odot \epsilon
 
 ### Reconstruction Error (Decoder)
 
-![/assets/img/posts/GraduationPaper/vae/decoder.png](/assets/img/posts/GraduationPaper/vae/decoder.png)
+![/images/img/posts/GraduationPaper/vae/decoder.png](/images/img/posts/GraduationPaper/vae/decoder.png)
 
-![/assets/img/posts/GraduationPaper/vae/reconstruction.png](/assets/img/posts/GraduationPaper/vae/reconstruction.png)
+![/images/img/posts/GraduationPaper/vae/reconstruction.png](/images/img/posts/GraduationPaper/vae/reconstruction.png)
 
 - $L=1$인 경우의 식을 전개하면 아래와 같다.
 
-![/assets/img/posts/GraduationPaper/vae/reconstruction2.png](/assets/img/posts/GraduationPaper/vae/reconstruction2.png)
+![/images/img/posts/GraduationPaper/vae/reconstruction2.png](/images/img/posts/GraduationPaper/vae/reconstruction2.png)
 
 - 입력 x와 출력 $p_{i,j}$ 사이의 cross-entropy가 되는것을 볼 수 있다.
 

@@ -92,15 +92,15 @@ server:
 
 ### Edit Configuration
 
-![스크린샷 2023-01-18 오후 11.50.09.png](/assets/posting/backend/springboot_env/pic1.png)
+![스크린샷 2023-01-18 오후 11.50.09.png](/images/posting/backend/springboot_env/pic1.png)
 
 ### Active profiles
 
-![스크린샷 2023-01-18 오후 11.50.49.png](/assets/posting/backend/springboot_env/pic2.png)
+![스크린샷 2023-01-18 오후 11.50.49.png](/images/posting/backend/springboot_env/pic2.png)
 
 상단에 Edit Configuration을 열어 profile에 dev, local, prod 중 하나를 넣어 실행하면 환경에 따라 서버를 실행할 수 있다.
 
-![스크린샷 2023-01-18 오후 11.54.55.png](/assets/posting/backend/springboot_env/pic3.png)
+![스크린샷 2023-01-18 오후 11.54.55.png](/images/posting/backend/springboot_env/pic3.png)
 
 local을 넣어 실행하게되면 로그에 profile이 local로 찍히게 된다.
 

@@ -38,13 +38,13 @@ $z = g(x)$, $y = f(z)$라고 가정한다면
   \Delta x
   \end{align}
 
-  ![/assets/img/posts/TaveResearch/neuralN4/chainrule.png](/assets/img/posts/TaveResearch/neuralN4/chainrule.png)
+  ![/images/img/posts/TaveResearch/neuralN4/chainrule.png](/images/img/posts/TaveResearch/neuralN4/chainrule.png)
 
 - z에 대한 y의 미분은 x에 대한 g(x)의 편미분들의 합이 된다.
 
 ## Jacobian
 
-![/assets/img/posts/TaveResearch/neuralN4/jacobian.png](/assets/img/posts/TaveResearch/neuralN4/jacobian.png)
+![/images/img/posts/TaveResearch/neuralN4/jacobian.png](/images/img/posts/TaveResearch/neuralN4/jacobian.png)
 
 \begin{align}
 \Delta y = J_y (z) \Delta z
@@ -57,7 +57,7 @@ $z = g(x)$, $y = f(z)$라고 가정한다면
 
 ## Forward propagation using scalar formula
 
-![/assets/img/posts/TaveResearch/neuralN4/forwardpass1.png](/assets/img/posts/TaveResearch/neuralN4/forwardpass1.png)
+![/images/img/posts/TaveResearch/neuralN4/forwardpass1.png](/images/img/posts/TaveResearch/neuralN4/forwardpass1.png)
 
 \begin{align}
 {z_j}^{(n)} = {\sum}\_i {w\_{ij}}^{(N)}{y_i}^{(N-1)}
@@ -74,7 +74,7 @@ $z = g(x)$, $y = f(z)$라고 가정한다면
 
 ## Backward propagation using scalar formula
 
-![/assets/img/posts/TaveResearch/neuralN4/back1.png](/assets/img/posts/TaveResearch/neuralN4/back1.png)
+![/images/img/posts/TaveResearch/neuralN4/back1.png](/images/img/posts/TaveResearch/neuralN4/back1.png)
 
 - 역전파의 시작은 divergence(Div)를 미분하는것으로 시작한다.
   \begin{align}
@@ -145,7 +145,7 @@ $z = g(x)$, $y = f(z)$라고 가정한다면
 
 ## Forward propagation using vector formula
 
-![/assets/img/posts/TaveResearch/neuralN4/foward2.png](/assets/img/posts/TaveResearch/neuralN4/foward2.png)
+![/images/img/posts/TaveResearch/neuralN4/foward2.png](/images/img/posts/TaveResearch/neuralN4/foward2.png)
 
 \begin{align}
 z_k = W_k {y}\_{k-1} + b_k
@@ -167,7 +167,7 @@ Y = {f}\_N(W_N{f}\_{N-1}(...f_2(W_2f_1(W_1x+b_1)+b_2)...+b_N)
 
 ## Backward propagation using vector formula
 
-![/assets/img/posts/TaveResearch/neuralN4/back2.png](/assets/img/posts/TaveResearch/neuralN4/back2.png)
+![/images/img/posts/TaveResearch/neuralN4/back2.png](/images/img/posts/TaveResearch/neuralN4/back2.png)
 
 - 역전파는 Y에 대한 Div의 편미분으로 시작된다.
 

@@ -12,7 +12,7 @@ mermaid: true
 - 여러개의 신호를 입력으로 받아 하나의 신호로 출력한다.
 - $x_1$ 과 $x_2$는 입력 신호 , y는 출력 신호, $w_1$과 $w_2$는 가중치를 나탄낸다.
 
-![perceptron.png](/assets/img/posts/TaveResearch/neuralN1/perceptron.png)
+![perceptron.png](/images/img/posts/TaveResearch/neuralN1/perceptron.png)
 
 \begin{align}
 y = 0 & (w_1x_1 + w_2x_2 <= \theta)
@@ -27,7 +27,7 @@ y = 1 & (w_1x_1 + w_2x_2 > \theta)
 
 ## How to learn perceptron
 
-![perceptron_vector.png](/assets/img/posts/TaveResearch/neuralN1/perceptron_vector.png)
+![perceptron_vector.png](/images/img/posts/TaveResearch/neuralN1/perceptron_vector.png)
 
 - 초기에는 랜덤하게 normal vector W를 초기화 한다.
 
@@ -36,9 +36,9 @@ y = 1 & (w_1x_1 + w_2x_2 > \theta)
 - W벡터와 같은 방향은 +1 클래스로 분류되고, W벡터와 반대편은 -1 클래스로 분류된다.
 - 아래의 파란점은 잘못 분류되었으므로 W벡터를 업데이트 해줘야 한다.
 
-![updatedVector.png](/assets/img/posts/TaveResearch/neuralN1/updatedVector.png)
+![updatedVector.png](/images/img/posts/TaveResearch/neuralN1/updatedVector.png)
 
-![updatedVector2.png](/assets/img/posts/TaveResearch/neuralN1/updatedVector2.png)
+![updatedVector2.png](/images/img/posts/TaveResearch/neuralN1/updatedVector2.png)
 
 - 두 번의 W벡터 업데이트를 통해 완벽하게 파란점과 빨간점을 분류할 수 있다.
 
@@ -46,7 +46,7 @@ y = 1 & (w_1x_1 + w_2x_2 > \theta)
 
 - 편향(bias)가 추가된 퍼셉트론은 아래와 같다.
 
-![bias_perceotron.png](/assets/img/posts/TaveResearch/neuralN1/bias_perceotron.png)
+![bias_perceotron.png](/images/img/posts/TaveResearch/neuralN1/bias_perceotron.png)
 
 - $x_1$, $x_2$, 3개의 신호가 뉴런에 입력되어 다음 뉴런에 전달된다.
 - 다음 뉴런에서는 3개의 신호들의 합이 0을 넘으면 1을 출력하고, 그렇지 않으면 0을 출력한다.
@@ -92,7 +92,7 @@ plt.ylim(-0.1, 1.1)
 plt.show()
 ```
 
-![stepFunction.png](/assets/img/posts/TaveResearch/neuralN1/stepFunction.png)
+![stepFunction.png](/images/img/posts/TaveResearch/neuralN1/stepFunction.png)
 
 ### Sigmoid Function
 
@@ -117,7 +117,7 @@ plt.ylim(-0.1, 1.1)
 plt.show()
 ```
 
-![sigmoid.png](/assets/img/posts/TaveResearch/neuralN1/sigmoid.png)
+![sigmoid.png](/images/img/posts/TaveResearch/neuralN1/sigmoid.png)
 
 ## ReLU Function
 
@@ -146,7 +146,7 @@ plt.ylim(-0.1, 1.1)
 plt.show()
 ```
 
-![ReLU.png](/assets/img/posts/TaveResearch/neuralN1/ReLU.png)
+![ReLU.png](/images/img/posts/TaveResearch/neuralN1/ReLU.png)
 
 ###### References
 

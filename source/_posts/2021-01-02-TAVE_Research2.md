@@ -11,7 +11,7 @@ mermaid: true
 
 - 미분은 한 순간의 변화량을 표현한 것이다.
 
-  ![derivative.png](/assets/img/posts/TaveResearch/neuralN2/derivative.png)
+  ![derivative.png](/images/img/posts/TaveResearch/neuralN2/derivative.png)
 
   \begin{align}
   \Delta y = \alpha \Delta x
@@ -26,7 +26,7 @@ mermaid: true
 - 함수가 볼록한 형태에서는 항상 경사 하강법으로 최솟값을 찾을 수 있다. (a)
 - 볼록하지 않은 함수에서는 해당 함수의 극솟값이나 안정점에 도달 할 수 있다. (b)
 
-  ![gradDescent.png](/assets/img/posts/TaveResearch/neuralN2/gradDescent.png)
+  ![gradDescent.png](/images/img/posts/TaveResearch/neuralN2/gradDescent.png)
 
   ### 경사법에 의한 $f(x_0, x_1) = (x_0)^2 + (x_1)^2$ 함수의 갱신 과정
 
@@ -94,13 +94,13 @@ mermaid: true
   plt.show()
   ```
 
-  ![gradientDescent.png](/assets/img/posts/TaveResearch/neuralN2/gradientDescent.png)
+  ![gradientDescent.png](/images/img/posts/TaveResearch/neuralN2/gradientDescent.png)
 
   - 경사법을 사용한 갱신 과정을 나타낸 그림으로 최솟값인 원점에 점점 가까워지는 것을 볼 수 있다.
 
 ## Softmax Function
 
-![softmax.png](/assets/img/posts/TaveResearch/neuralN2/softmax.png)
+![softmax.png](/images/img/posts/TaveResearch/neuralN2/softmax.png)
 
 \begin{align}
 {y_k} = \exp(a_k) / {\sum{^n}}\_{i=1} {\exp(a_i)}

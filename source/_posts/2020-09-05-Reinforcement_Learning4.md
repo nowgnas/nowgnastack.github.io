@@ -24,7 +24,7 @@ mermaid: true
 
 - 이미지 위에서 stride값 만큼 filter를 이동시키면서 겹쳐지는 부분의 각 원소의 값을 곱해서 모두 더한 값을 출력으로 하는 연산이다.
 
-  ![convolution](/assets/img/RL_Study4/convolution.png)
+  ![convolution](/images/img/RL_Study4/convolution.png)
 
 - 첫 번째 convolution 연산은 보라색 테두리와 필터의 연산이다.
 - 같은 자리의 값고 곱한 후 그 값들의 합이 output의 1x1자리 값이 된다.
@@ -40,7 +40,7 @@ mermaid: true
 ### padding
 
 - zero-padding(0이 들어간 패드가 이미지 각 면에 둘러진다.)
-  ![padding](/assets/img/RL_Study4/padding.png)
+  ![padding](/images/img/RL_Study4/padding.png)
 
 ## 입력의 형태
 
@@ -79,12 +79,12 @@ torch.nn.MaxPool2d(kernel_size, stride=None, padding=0 ...)
 ```
 
 - max pooling = 2일때 2x2사이즈 안에서 가장 큰값을 출력한다.
-  ![max](/assets/img/RL_Study4/max.png)
+  ![max](/images/img/RL_Study4/max.png)
 
 ### Average Pooling
 
 - average pooling = 2일때 2x2사이즈 안에서 평균값을 출력한다.
-  ![max](/assets/img/RL_Study4/avg.png)
+  ![max](/images/img/RL_Study4/avg.png)
 
 ## Mnist CNN
 
@@ -103,14 +103,14 @@ torch.nn.MaxPool2d(kernel_size, stride=None, padding=0 ...)
 
 > [CNN MNIST code](https://github.com/Marshmellowon/DeepLearning_with_Pytorch/blob/master/Mnist_CNN_jupyter.ipynb)
 
-![mnist](/assets/img/RL_Study4/Mnist.png)
+![mnist](/images/img/RL_Study4/Mnist.png)
 
 # RNN
 
 - 반복적이고 순차적인 데이터(Sequential data)학습에 특화된 인공신경망의 한 종류이다.
 - 내부의 순환구조가 들어있으며 이를 이용하여 과거의 학습을 현재 학습에 반영한다.
-  ![rnn](/assets/img/RL_Study4/rnn.png)
-  ![rnn2](/assets/img/RL_Study4/rnn2.png)
+  ![rnn](/images/img/RL_Study4/rnn.png)
+  ![rnn2](/images/img/RL_Study4/rnn2.png)
 
 - h<sub>t-1</sub>: 이전 상태값
 - x<sub>t</sub>: 현재 입력값
@@ -119,7 +119,7 @@ torch.nn.MaxPool2d(kernel_size, stride=None, padding=0 ...)
 
 ## RNN의 다양한 구조
 
-![rnn3](/assets/img/RL_Study4/rnn3.png)
+![rnn3](/images/img/RL_Study4/rnn3.png)
 
 #### one to many
 

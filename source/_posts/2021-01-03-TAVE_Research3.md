@@ -46,7 +46,7 @@ SSE(y2, t) # 0.6425
 - 자원량은 0 또는 1의 bits로 표현 한다.
 - 인코딩시 확률이 낮은 것들은 길게 코딩하고 높은 것들은 짧게 코딩한다.
 
-  ![log.png](/assets/img/posts/TaveResearch/neuralN3/log.png)
+  ![log.png](/images/img/posts/TaveResearch/neuralN3/log.png)
 
 - y축은 코딩되는 길이, x축은 확률이다.
 - 아래 식은 확률에 따른 길이를 나타낸다.
@@ -256,7 +256,7 @@ for i in range(iters_num):
         print("train acc, test acc | " + str(train_acc) + ", " + str(test_acc))
 ```
 
-![loss_acc.png](/assets/img/posts/TaveResearch/neuralN3/loss_acc.png)
+![loss_acc.png](/images/img/posts/TaveResearch/neuralN3/loss_acc.png)
 
 - 미니배치 크기를 100으로 하여 한번의 iteration을 수행할 때마다 임의로 100개의 데이터를 추린다.
 - 100개의 미니배치를 대상으로 확률적 경사 하강법을 수행하여 매개변수를 갱신한다.
