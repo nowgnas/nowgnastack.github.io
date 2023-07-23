@@ -4,16 +4,16 @@
 
 # Site
 title: nowgnastack
-subtitle: ""
+subtitle: 지식 공유 스택
 description: "지식을 공유하며 함께 성장하기를 추구합니다."
 keywords:
 author: nowgnas
 language: en
-timezone: ""
+timezone: Asia/Seoul
 
 # URL
-## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+## Set your site url here. For example, if you use GitHub Page, set url as 'https://nowgnas.github.io/project'
+url: https://github.com/nowgnas
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
