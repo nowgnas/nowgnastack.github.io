@@ -52,7 +52,7 @@ tags_overview: true
 #   - sort_updated: sort posts by last modification date instead of creation date.
 posts_overview:
   show_all_posts: false
-  post_count: 7
+  post_count: 10
   sort_updated: false
 
 # Customize the archive view.
@@ -130,7 +130,7 @@ favicon:
 # Set the color scheme.
 # Available color schemes are 'dark', 'light', 'classic' and 'white'.
 # Alternatively, add your own custom color scheme to source/css/_colors.
-colorscheme: light
+colorscheme: white
 
 # Maximal width of the page in rem units.
 page_width: 52
