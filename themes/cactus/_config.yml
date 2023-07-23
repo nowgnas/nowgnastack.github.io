@@ -130,7 +130,7 @@ favicon:
 # Set the color scheme.
 # Available color schemes are 'dark', 'light', 'classic' and 'white'.
 # Alternatively, add your own custom color scheme to source/css/_colors.
-colorscheme: classic
+colorscheme: light
 
 # Maximal width of the page in rem units.
 page_width: 48
@@ -207,3 +207,16 @@ cdn:
   font_awesome: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css
   justified_gallery_css: https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.8.1/css/justifiedGallery.min.css
   justified_gallery_js: https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js
+
+nofolow:
+  enable: true
+  exclude:
+    - :link.com
+sitemap:
+  path: sitemap.xml
+  tag: false
+  category: false
+feed:
+  type: rss2
+  path: rss2.xml
+  limit: 20
