@@ -4,7 +4,7 @@ categories: spring
 date: 2022-10-18 18:37 +0900
 description: mybatis를 사용한 spring legacy project 구조를 알아본다
 lastmod: 2022-10-18 18:37 +0900
-tags: java mvc mybatis spring sts
+tags: [java, mvc, mybatis, spring, sts]
 ---
 
 이번 포스팅에서는 sts3에서 Spring Legacy Project를 생성하고 웹 페이지에서 사용자 회원가입, 로그인을 mybatis를 이용해 구현한다.
@@ -272,13 +272,7 @@ sqlSessionFactory로 mybatis의 configuration과 mapper 경로를 정의한다. 
   </div>
   <div class="form-group">
     <label for="InputEmail">ID</label>
-    <input
-      type="text"
-      class="form-control"
-      name="id"
-      id="id"
-      placeholder="ID를 입력해주세요"
-    />
+    <input type="text" class="form-control" name="id" id="id" placeholder="ID를 입력해주세요" />
   </div>
   <div class="form-group">
     <label for="inputPassword">비밀번호</label>
@@ -292,12 +286,7 @@ sqlSessionFactory로 mybatis의 configuration과 mapper 경로를 정의한다. 
   </div>
   ...
   <div class="form-group text-center">
-    <input
-      type="button"
-      id="memberInsertBtn"
-      class="btn btn-primary"
-      value="회원가입"
-    />
+    <input type="button" id="memberInsertBtn" class="btn btn-primary" value="회원가입" />
     <button type="submit" class="btn btn-warning">
       가입취소<i class="fa fa-times spaceLeft"></i>
     </button>
@@ -314,7 +303,7 @@ $(document).ready(() => {
     let id = $("#id").val();
     let pw = $("#pw").val();
 
-    $.post("../memberInsert.shop", { name, id, pw }, (data) => {
+    $.post("../memberInsert.shop", { name, id, pw }, data => {
       alert(data);
       window.close();
     });
@@ -412,11 +401,7 @@ sql쿼리에서 입력될 값은 #{}을 사용하며, 변수명은 DTO에 정의
 
 ```html
 <div id="msgDiv">
-  ID<input size="5" id="loginId" /> PW<input
-    size="5"
-    id="loginPw"
-    type="password"
-  />
+  ID<input size="5" id="loginId" /> PW<input size="5" id="loginPw" type="password" />
   <input type="button" id="loginBtn" value="login" />
 </div>
 ```
