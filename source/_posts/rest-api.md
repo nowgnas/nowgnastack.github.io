@@ -2,7 +2,7 @@
 title: REST API의 특징과 설계
 date: 2023-07-23 16:31:07
 tags: [rest api, http]
-categories: api
+categories: java
 ---
 
 ## API란 무엇인가 ?
